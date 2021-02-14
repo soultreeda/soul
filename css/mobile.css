@@ -1,5 +1,44 @@
 /* mobile.css */
 
+/* 푸터 */
+#sub_footer {
+  width: 100%;
+  left: 50%;
+  bottom: 20px;
+  position: absolute;
+  transform: translateX(-50%);
+  color: #AFB9D5;
+  font-size: 14px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+#sub_footer > ul.sns {
+  width: 100%;
+  position: absolute;
+  transform: translate(0%);
+  margin: 5px;
+}
+
+#sub_footer > ul.sns img {
+  width: 80%;
+}
+
+#sub_footer > ul.sns > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#sub_footer > .sns > li > a:hover {
+  opacity: 0.8;
+}
+
+#sub_footer > .copyright {
+  clear: both;
+  text-align: center;
+  margin-top: 40px;
+}
+
+
 /* index - 모바일 */
 body {
   background-image: url("../images/mobile_bg.jpg");
@@ -19,18 +58,18 @@ body {
 
 #main_header .header_box p {
   position: absolute;
-  width: 40%; height: 5%;
-  font-size: 13px;
+  width: 37%; height: 8%;
+  font-size: 15px;
   font-weight: 700;
 }
 
 #main_header .logo {
-  width: 50%;
+  width: 70%;
+  margin-top: 5%;
 }
 
 #main_header .b_title {
   width: 50%;
-  clear: both;
 }
 
 #main_header .btn-toggle { 
@@ -89,8 +128,8 @@ body {
 #gnb {
   position: fixed;
   background: #E8ECF5;
-  width: 180px; height: 100%;
-  top: 0; right: -180px;
+  width: 200px; height: 100%;
+  top: 0; right: -200px;
   transition-duration: 0.4s;
   z-index: 999;
 }
@@ -109,18 +148,18 @@ body {
 }
 
 #gnb > ul {
-  margin-top: 90px;
+  margin-top: 100px;
 }
 
 #gnb > ul > li {
-  width: 180px; height: 60px;
+  width: 200px; height: 70px;
   line-height: 70px;
-  font-size: 16px;
+  font-size: 0.9em;
 }
 
 #gnb > ul > li > a {
   display: block;
-  line-height: 60px;
+  line-height: 70px;
   color: #333;
 }
 
@@ -128,6 +167,7 @@ body {
   background: #103B88;
   color: #fff;
 }
+
 #gnb > ul > li.active a {
   background: #103B88;
   color: #fff;
@@ -166,45 +206,6 @@ body {
 }
 
 
-/* 푸터 */
-#sub_footer {
-  width: 100%;
-  left: 50%;
-  bottom: 20px;
-  position: absolute;
-  transform: translateX(-50%);
-  color: #AFB9D5;
-  font-size: 14px;
-  text-shadow: 1px 1px 3px #000;
-}
-
-#sub_footer > ul.sns {
-  width: 100%;
-  position: absolute;
-  transform: translate(0%);
-  margin: 5px;
-}
-
-#sub_footer > ul.sns img {
-  width: 80%;
-}
-
-#sub_footer > ul.sns > li {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-#sub_footer > .sns > li > a:hover {
-  opacity: 0.8;
-}
-
-#sub_footer > .copyright {
-  clear: both;
-  text-align: center;
-  margin-top: 40px;
-}
-
-
 /* 시놉시스 - 모바일 */
 #synop {
   background-image: url(../images/video_bg.jpg);
@@ -218,7 +219,7 @@ body {
 
 #synop > .container {
   position: absolute;
-  margin-top: 40%;
+  margin-top: 33%;
   padding: 10px;
   text-align: center;
   background-color: #fff;
@@ -226,9 +227,9 @@ body {
 }
 
 #synop > .container > p {
-  font-size: 12px;
+  font-size: 14px;
   color: #333;
-  margin: 8px;
+  margin: 10px;
   line-height: 1.2em;
 }
 
@@ -238,8 +239,8 @@ body {
   font-size: 15px;
   color: #fff;
   text-shadow: 2px 2px 4px #000;
-  margin-top: 37%;
-  letter-spacing: 0.3em;
+  margin-top: 30%;
+  letter-spacing: 0.7em;
   text-align: center;
 }
 
@@ -251,7 +252,7 @@ body {
   color: #fff;
   margin-left: 0%;
   text-shadow: 2px 2px 4px #000;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.7em;
 }
 
 #synop .sub_title2 {
@@ -282,16 +283,14 @@ body {
   opacity: 0.6;
 }
 
-
 /* 갤러리 - 모바일 */
-#gallery #main {
-  margin-top: 100px;
-}
 #gallery #main figure {
   max-width: 1000px;
+  /* outline: 2px solid red; */
   margin: 0 auto;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 #gallery #main figure img {
@@ -299,6 +298,7 @@ body {
 }
 
 #gallery #main ul {
+  /* outline: 2px solid green; */
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
@@ -307,17 +307,52 @@ body {
 #gallery #main ul li {
   width: calc(100% / 6);
   float: left;
+  /* outline: 2px solid red; */
   border: 1px solid #707070;
   overflow: hidden;
 }
 
 #gallery #main ul li:hover {
-  border: 4px solid #103B88;
+  border: 3px solid #103B88;
 }
 
 #gallery #main ul li a img{
   width: 100%;
   display: block;
+}
+
+#gallery #sub_footer {
+  margin-top: 65px;
+}
+
+#gallery .btn-toggle { 
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px; right: 20px;
+  width: 40px;
+}
+
+#gallery .btn-toggle img {
+  width: 80%;
+}
+
+#gallery .btn-toggle:hover {
+  opacity: 0.6;
+}
+
+#gallery #main ul li:hover {
+  border: 3px solid #103B88;
+}
+
+#gallery #main ul li a img{
+  width: 100%;
+  display: block;
+}
+
+#gallery #sub_footer {
+  margin-top: 55px;
 }
 
 #gallery .btn-toggle { 
@@ -332,6 +367,6 @@ body {
   width: 80%;
 }
 
-.btn-toggle:hover{
+.btn-toggle:hover {
   opacity: 0.6;
 }
