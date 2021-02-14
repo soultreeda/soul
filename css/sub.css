@@ -1,0 +1,231 @@
+/*  sub.css */
+
+body {
+  font-size: 18px;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+
+#sub_footer {
+  color: #AFB9D5;
+  font-size: 15px;
+  text-shadow: 2px 2px 5px #000;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+#sub_footer > ul.sns {
+  margin-bottom: 15px;
+}
+
+#sub_footer > ul.sns > li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#sub_footer > .sns > li > a:hover {
+  opacity: 0.8;
+}
+
+#sub_footer > .copyright {
+  clear: both;
+}
+
+
+/* 비디오 */
+#video {
+  background-image: url(../images/video_bg.jpg);
+}
+
+#video > .container {
+  margin: 0 auto;
+  max-width: 1400px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+#video > .container iframe {
+  width: 100%; 
+  height: calc(100vh - 200px);
+  display: block;
+}
+
+#video .btn-toggle { 
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 40px; right: 40px;
+  width: 40px;
+}
+
+.btn-toggle img {
+  width: 100%;
+}
+
+.btn-toggle:hover {
+  opacity: 0.6;
+}
+
+
+/* 시놉시스 */
+#synop {
+  background-image: url(../images/synop_bg.jpg);
+}
+
+#synop .logo {
+  position: absolute;
+  margin-top: 6%;
+  right: 5%;
+}
+
+#synop > .container {
+  position: absolute;
+  transform: translateX(15%) translateY(15%);
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 2px 3px 6px #444;
+}
+
+#synop > .container > p {
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+}
+
+#synop > .sub_title {
+  width: 100%;
+  position: absolute;
+  font-size: 30px;
+  color: #fff;
+  margin-top: 35%;
+  text-shadow: 2px 2px 4px #000;
+  letter-spacing: 0.3em;
+}
+
+#synop .sub_title1 {
+  position: absolute;
+  font-size: 30px;
+  color: #fff;
+  margin-left: 25%;
+  text-shadow: 2px 2px 4px #000;
+  letter-spacing: 0.3em;
+}
+
+#synop .sub_title2 {
+  position: absolute;
+  font-size: 30px;
+  color: #fff;
+  margin-left: 75%;
+  text-shadow: 2px 2px 4px #000;
+  letter-spacing: 0.3em;
+}
+
+#synop .btn-toggle { 
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 40px; right: 40px;
+  width: 40px;
+}
+
+.btn-toggle img {
+  width: 100%;
+}
+
+.btn-toggle:hover {
+  opacity: 0.6;
+}
+
+
+/* 갤러리 */
+#gallery {
+  background-image: url(../images/video_bg.jpg);
+}
+
+#gallery #main {
+  margin-top: 100px;
+}
+
+#gallery #main figure {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+#gallery #main figure img {
+  width: 100%;
+}
+
+#gallery #main ul {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#gallery #main ul li {
+  width: calc(100% / 6);
+  float: left;
+  border: 1px solid #103B88;
+  overflow: hidden;
+}
+
+#gallery #main ul li:hover {
+  border: 3px solid #103B88;
+}
+
+#gallery #main ul li a img{
+  width: 100%;
+  display: block;
+}
+
+#gallery #sub_footer {
+  margin-top: 55px;
+}
+
+#gallery .btn-toggle { 
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 40px; right: 40px;
+  width: 40px;
+}
+
+.btn-toggle img {
+  width: 100%;
+}
+
+.btn-toggle:hover {
+  opacity: 0.6;
+}
+
+/* 갤러리 모바일 목록 구성 */
+@media screen and (max-width: 500px) {
+  .clear { clear: both;}
+  #gallery #main ul.thumb {
+    overflow: hidden;
+    width: 100%;
+    margin-left: 20px;
+  }
+  #gallery #main ul.thumb li {
+    width: calc((100% - 40px) / 3);
+    float: left;
+    /* outline: 2px solid red; */
+    /* border: 1px solid #707070; */
+    overflow: hidden;
+  }
+  #main_footer {
+    position: absolute;
+  }

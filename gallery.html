@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>갤러리 &lt; 소울(Soul)</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <!-- 웹폰트 Noto Sans KR regular 400 / bold 700-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 768px)">
+    <!-- 제이쿼리 -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+
+<body id="gallery" ncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydown="return false">
+    <header>
+        <button class="btn-toggle">
+            <img src="./images/btn-toggle.svg" alt="메뉴 열기">
+        </button>
+    </header>
+
+    <nav id="gnb">
+        <ul>
+            <li><a href="./index.html">홈</a></li>
+            <li><a href="./video.html">비디오</a></li>
+            <li><a href="./synop.html">시놉시스</a></li>
+            <li class="active"><a href="./gallery.html">갤러리</a></li>
+        </ul>
+        <button class="btn-close">
+            <img src="./images/btn-close.svg" alt="메뉴 닫기">
+        </button>
+    </nav>
+
+    <section id="main">
+        <figure>
+            <img src="./images/img01.jpg" alt="01">
+        </figure>
+        <ul class="thumb">
+            <li class="clear"><a href="#"><img src="./images/img01.jpg" alt="01"></a></li>
+            <li><a href="#"><img src="./images/img02.jpg" alt="02"></a></li>
+            <li><a href="#"><img src="./images/img03.jpg" alt="03"></a></li>
+            <li><a href="#"><img src="./images/img04.jpg" alt="04"></a></li>
+            <li><a href="#"><img src="./images/img05.jpg" alt="05"></a></li>
+            <li><a href="#"><img src="./images/img06.jpg" alt="06"></a></li>
+        </ul>
+    </section>
+
+    <div id="sub_footer">
+        <ul class="sns">
+            <li><a href="https://www.instagram.com/disneykorea/?hl=ko" target="_blank">
+                    <img src="./images/instagram_icon.svg" alt="instagram"></a></li>
+            <li><a href="https://www.facebook.com/pg/DisneyKorea/videos/" target="_blank">
+                    <img src="./images/facebook_icon.svg" alt="facebook"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCbv7Dcn5iNrAyd3GwgVHkIQ" target="_blank">
+                    <img src="./images/youtube_icon.svg" alt="youtube"></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy;2021 Disney / pixar &nbsp; &nbsp; ·전체관람가</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
