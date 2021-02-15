@@ -1,5 +1,9 @@
 /* mobile.css */
 
+* {
+  overflow: hidden;
+}
+
 /* 푸터 */
 #sub_footer {
   width: 100%;
@@ -42,24 +46,24 @@
 /* index - 모바일 */
 body {
   background-image: url("../images/mobile_bg.jpg");
-  background-size: cover;
 }
 
 #main_header {
   width: 100%;
-  height: 200px;
+  height: 100%;
 }
 
 #main_header .header_box {
   position: absolute;
-  transform: translate(0%);
+  top: 27%; left: 50%;
+  width: 100%;
   /* outline: 1px solid red; */
 }
 
 #main_header .header_box p {
   position: absolute;
   width: 37%; height: 8%;
-  font-size: 15px;
+  font-size: 3.5vw;
   font-weight: 700;
 }
 
@@ -87,11 +91,11 @@ body {
 
 #main_footer {
   box-sizing: border-box;
-  width: 100%;
+  width: 100%; height: 10%;
   position: absolute;
-  bottom: 50px;
+  bottom: 20px;
   transform: translate(0%);
-  color: #AFB9D5;
+  color: #fff;
   font-size: 14px;
   text-shadow: 1px 1px 3px #000;
 }
@@ -128,8 +132,8 @@ body {
 #gnb {
   position: fixed;
   background: #E8ECF5;
-  width: 200px; height: 100%;
-  top: 0; right: -200px;
+  width: 180px; height: 100%;
+  top: 0; right: -180px;
   transition-duration: 0.4s;
   z-index: 999;
 }
@@ -140,7 +144,7 @@ body {
 
 #gnb > .btn-close {
   width: 30px;
-  top: 25px; right: 25px;
+  top: 20px; right: 25px;
 }
 
 .btn-close img {
@@ -152,7 +156,7 @@ body {
 }
 
 #gnb > ul > li {
-  width: 200px; height: 70px;
+  width: 180px; height: 70px;
   line-height: 70px;
   font-size: 0.9em;
 }
@@ -179,6 +183,10 @@ body {
 
 
 /* 비디오 - 모바일 */
+#video {
+  background-image: url("../images/video_bg.jpg");
+}
+
 /*#video > .container {
   margin-top: calc(100vh / 8);
 }
@@ -208,7 +216,7 @@ body {
 
 /* 시놉시스 - 모바일 */
 #synop {
-  background-image: url(../images/video_bg.jpg);
+  background-image: url("../images/video_bg.jpg");
 }
 
 #synop .logo {
@@ -284,8 +292,11 @@ body {
 }
 
 /* 갤러리 - 모바일 */
+#gallery {
+  background-image: url("../images/video_bg.jpg");
+}
+
 #gallery #main figure {
-  max-width: 1000px;
   /* outline: 2px solid red; */
   margin: 0 auto;
   overflow: hidden;
@@ -294,7 +305,9 @@ body {
 }
 
 #gallery #main figure img {
-  width: 100%;
+  position: relative;
+  width: 90%;
+  left: 5%; right: 0%;
 }
 
 #gallery #main ul {
@@ -307,43 +320,13 @@ body {
 #gallery #main ul li {
   width: calc(100% / 6);
   float: left;
-  /* outline: 2px solid red; */
+  /*outline: 2px solid red; */
   border: 1px solid #707070;
   overflow: hidden;
 }
 
 #gallery #main ul li:hover {
-  border: 3px solid #103B88;
-}
-
-#gallery #main ul li a img{
-  width: 100%;
-  display: block;
-}
-
-#gallery #sub_footer {
-  margin-top: 65px;
-}
-
-#gallery .btn-toggle { 
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 20px; right: 20px;
-  width: 40px;
-}
-
-#gallery .btn-toggle img {
-  width: 80%;
-}
-
-#gallery .btn-toggle:hover {
-  opacity: 0.6;
-}
-
-#gallery #main ul li:hover {
-  border: 3px solid #103B88;
+  border: 1px solid #103B88;
 }
 
 #gallery #main ul li a img{

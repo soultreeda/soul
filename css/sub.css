@@ -203,11 +203,11 @@ body {
   width: 40px;
 }
 
-#gallery .btn-toggle img {
+.btn-toggle img {
   width: 100%;
 }
 
-#gallery .btn-toggle:hover {
+.btn-toggle:hover {
   opacity: 0.6;
 }
 
